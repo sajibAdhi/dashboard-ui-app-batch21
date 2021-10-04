@@ -8,6 +8,7 @@ class SearchBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(10),
+      padding: EdgeInsets.all(20),
       height: 300,
       width: double.maxFinite,
       decoration: BoxDecoration(
@@ -16,10 +17,8 @@ class SearchBar extends StatelessWidget {
           image: NetworkImage(
               "https://image.shutterstock.com/image-photo/abstract-real-paper-textured-light-260nw-1580357116.jpg"),
           fit: BoxFit.cover,
-
         ),
       ),
-
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -38,7 +37,7 @@ class SearchBar extends StatelessWidget {
             height: 10,
           ),
           Text(
-            "You can search quickly for the job you want",
+            "You can search quickly for \n the job you want",
             style: TextStyle(
               height: 1.8,
               // color: Colors.white,
@@ -48,10 +47,20 @@ class SearchBar extends StatelessWidget {
             height: 30,
           ),
           Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(50)
+            ),
             padding: EdgeInsets.all(15),
             child: Row(
               children: [
-                Image.network()
+                Icon(Icons.search),
+                Text(
+                  "Search",
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                )
               ],
             ),
           )
