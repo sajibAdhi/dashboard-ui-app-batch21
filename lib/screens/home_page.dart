@@ -1,3 +1,4 @@
+import 'package:dashboard_ui_app_batch21/widgets/background_widget.dart';
 import 'package:dashboard_ui_app_batch21/widgets/home_app_bar.dart';
 import 'package:dashboard_ui_app_batch21/widgets/search_bar.dart';
 import 'package:dashboard_ui_app_batch21/widgets/tag_list.dart';
@@ -16,20 +17,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Stack(
         children: [
-          Row(
-            children: [
-              Expanded(
-                flex: 2,
-                child: Container(),
-              ),
-              Expanded(
-                flex: 1,
-                child: Container(
-                  color: Colors.grey[200],
-                ),
-              ),
-            ],
-          ),
+          BackgroundWidget(),
           Column(
             children: [
               HomeAppBar(),
