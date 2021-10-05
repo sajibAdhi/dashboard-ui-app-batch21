@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sajibAdhi.dashboard_ui_app_batch21.dashboard_ui_app_batch21">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
    <application
         android:label="dashboard_ui_app_batch21"
         android:icon="@mipmap/ic_launcher">

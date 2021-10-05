@@ -15,7 +15,7 @@ class SearchBar extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         image: DecorationImage(
           image: NetworkImage(
-              "https://image.shutterstock.com/image-photo/abstract-real-paper-textured-light-260nw-1580357116.jpg"),
+              "https://media.istockphoto.com/photos/mountain-landscape-picture-id498428776?k=20&m=498428776&s=612x612&w=0&h=9Tl_cFNSCTkGrO6d3sK72A7GMVbnG4xomHCJoL-FBdI="),
           fit: BoxFit.cover,
         ),
       ),
@@ -48,9 +48,7 @@ class SearchBar extends StatelessWidget {
           ),
           Container(
             decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(50)
-            ),
+                color: Colors.white, borderRadius: BorderRadius.circular(50)),
             padding: EdgeInsets.all(15),
             child: Row(
               children: [
