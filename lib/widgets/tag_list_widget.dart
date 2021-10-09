@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class TagList extends StatefulWidget {
-  TagList({Key? key}) : super(key: key);
+class TagListWidget extends StatefulWidget {
+  TagListWidget({Key? key}) : super(key: key);
 
   @override
-  _TagListState createState() => _TagListState();
+  _TagListWidgetState createState() => _TagListWidgetState();
 }
 
-class _TagListState extends State<TagList> {
+class _TagListWidgetState extends State<TagListWidget> {
   final _tagList = <String>['All', "⚡ Popular", "⭐ Featured"];
   var selected = 0;
 

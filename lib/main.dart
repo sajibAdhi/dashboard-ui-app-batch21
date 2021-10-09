@@ -1,3 +1,4 @@
+import 'package:dashboard_ui_app_batch21/screens/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Color(0xff01B2B8),
         accentColor: Color(0xff028B43),
       ),
-      home: LiquidPage(),
+      home: HomePage(),
     );
   }
 }
