@@ -19,6 +19,7 @@ class CompanyItemWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // First Column
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -28,26 +29,51 @@ class CompanyItemWidget extends StatelessWidget {
                     height: 40,
                     width: 40,
                     decoration: BoxDecoration(
-                      color: Colors.blue.withOpacity(0.5),
-                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(10),
                     ),
-                    child: Image.asset(companyInfo.logoUrl),
+                    child: Image.asset(
+                      companyInfo.logoUrl,
+                      fit: BoxFit.contain,
+                      height: 40,
+                      width: 40,
+                    ),
                   ),
                   SizedBox(width: 30),
-                  Text(companyInfo.company),
+                  Text(
+                    companyInfo.company,
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ],
               ),
               Icon(Icons.bookmark_add_outlined),
             ],
           ),
           SizedBox(height: 15),
-          Text(companyInfo.title),
+
+          // Second Column
+          Text(
+            companyInfo.title,
+            style: TextStyle(
+              fontSize: 26,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
           SizedBox(height: 15),
+          // Third Column
           Row(
             children: [
               Icon(Icons.location_on_outlined),
               SizedBox(width: 10),
-              Text(companyInfo.location),
+              Text(
+                companyInfo.location,
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
             ],
           ),
         ],
