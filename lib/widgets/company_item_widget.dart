@@ -1,5 +1,4 @@
 import 'package:dashboard_ui_app_batch21/models/company_info.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CompanyItemWidget extends StatelessWidget {
