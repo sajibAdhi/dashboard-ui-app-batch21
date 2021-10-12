@@ -12,7 +12,7 @@ class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
 }
-
+ 
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
@@ -31,16 +31,6 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBarWidget(),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        elevation: 0,
-        backgroundColor: Theme.of(context).accentColor,
-        child: Icon(
-          Icons.add,
-          color: Colors.white,
-        ),
-      ),
     );
   }
 }

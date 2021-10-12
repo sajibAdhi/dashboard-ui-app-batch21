@@ -8,7 +8,7 @@ class CompanyInfo {
   static List<CompanyInfo> getCompanyList() {
     return [
       CompanyInfo(
-        "assets/logos/google-logo.png",
+        "assets/logos/G-logo.png",
         "Google LLC",
         "Product Design",
         "417., Saint Martin",

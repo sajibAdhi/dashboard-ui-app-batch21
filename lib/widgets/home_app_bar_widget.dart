@@ -13,6 +13,7 @@ class HomeAppBarWidget extends StatelessWidget {
         left: 25,
         right: 25,
       ),
+      width: double.infinity,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
